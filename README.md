@@ -47,3 +47,23 @@ npm install node-sass --save
     })
   
   ]
+
+  路由切换的动画代码
+  .v-enter
+{
+    opacity: 0;
+    transform: translateX(100%);
+ }
+ .v-leave-to{
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+  }
+ .v-enter-active,
+ .v-leave-active{
+  transition: all 0.5s ease;
+ }
+
+  全局配置请求数据的url
+  Vue.http.options.root='http://vue.studyit.io/'
+  vue-resource 前面不能带/

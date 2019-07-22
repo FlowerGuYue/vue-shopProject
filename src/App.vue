@@ -42,12 +42,13 @@ export default {
 .myapp{
 	padding-top: 40px;
 	overflow-x: hidden;
+	padding-bottom: 50px;
 }
  a,a:focus,a:link{
 		text-decoration: none;
 	}
 
- * { touch-action: pan-y; }
+ 
  .v-enter
 {
  	opacity: 0;

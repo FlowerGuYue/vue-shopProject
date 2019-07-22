@@ -19,6 +19,15 @@ import "./assets/dist/js/mui.min.js"
 //引入mui额外的图标  像购物车什么的
 import "./assets/dist/css/icons-extra.css"
 import "./assets/dist/fonts/mui-icons-extra.ttf"
+
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
+Vue.http.options.root='http://www.escook.cn:8080'
+// 引入日期转换插件
+import moment from 'moment'
+Vue.filter('dateFormat',function(datastr,pattern="YYYY-MM-DD hh:mm:ss") {
+	return moment(datastr).format(pattern);
+});
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
